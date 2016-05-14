@@ -1,0 +1,72 @@
+<template name="adminDashboard">
+    <br>
+    <br>
+        <div class="ui container">
+            <h2 class="ui header">
+                <i class="settings icon"></i>
+                <div class="content">
+                    Chapters Settings
+                    <div class="sub header">Manage lessons preferences</div>
+                </div>
+            </h2>
+            <div class="ui segment">
+                <div class="ui relaxed divided list">
+                    {{#each chapters}}
+                        {{>adminChapter}}
+                    {{/each}}
+                </div>
+            </div>
+            <button id="new-chapter" class="ui left positive labeled icon button">
+                <i class="left add icon"></i>
+                Add new chapter
+            </button>
+        </div>
+</template>
+
+<template name="adminChapter">
+    <div class="item">
+        <div class="right floated content">
+            <form class="new-lesson ui input">
+                <input type="text" name="text" placeholder="Type to add new tasks" />
+            </form>
+
+            <div class="right floated content delete-event">
+                <div class="ui button ">Delete</div>
+            </div>
+            <div id="set-active" class="right floated content">
+                <div class="ui button">Set active</div>
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="header">{{title}}</div>
+            {{dueDate}}
+            {{description}}
+            <div id="lessonsList">
+            {{#each lessons}}
+                {{>adminLesson}}
+            {{/each}}
+            </div>
+        </div>
+
+    </div>
+</template>
+
+<template name="adminLesson">
+    <div id="sram" class="ui list">
+        <a class="item">
+            <div id="delete-lesson" class="right floated content">
+                <i class="icon trash outline"></i>
+            </div>
+            <div id="finished-lesson" class="right floated content">
+                <i id="finished-lesson-icon" class="icon checkmark"></i>
+            </div>
+            <i class="student icon"></i>
+            <div class="content">
+
+                <div class="header">{{title}}</div>
+            </div>
+        </a>
+    </div>
+
+</template>

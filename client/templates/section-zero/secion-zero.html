@@ -1,0 +1,65 @@
+
+<template name="sectionZero">
+    {{>chapterHeader}}
+    {{>chapterOne}}
+    <div id="tj-main-column-zero-chapter" class="ui vertical stripe segment">
+        <div class="ui middle aligned stackable grid container">
+            <div class="row tj-main-columns-wrapper">
+                <div class="seven wide column tj-main-column">
+
+                    <div id="chapter-title" class="tj-main-chapter-title-wrapper tj-main-chapter-img chapter-one-image">
+
+                        <h1 class="ui header">Chapter #1</h1>
+
+                    </div>
+                    <h3 class="ui header">
+
+                        <div class="content">
+                            Introduction
+                            <div class="sub header"><i class="calendar outline icon"></i>Available {{dueTime}}</div>
+                        </div>
+                    </h3>
+                    <p>You have desided to learn new superpower to do things that most of them never thought possible! Wise decision. With this mentoring program you will learn basics of User Experience and you will aquire proper mind set.</p>
+
+                </div>
+                <div class="eight wide right floated column tj-main-column tj-main-column-todo not-read ">
+                    <div class="row">
+                        <h2 class="ui header">
+                            <img src="images/begginer.png" class="ui image">
+                            <div class="content">
+                                Beginer
+
+                            </div>
+                        </h2>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="ui vertical steps" style="width: 100%;">
+                            {{#each lessons}}
+                            {{>mainLesson}}
+                            {{/each}}
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="center aligned column">
+                            {{#if chapterFinished}}
+                            <button id="finish-chapter" class="ui huge positive button">Chapter finshied</button>
+
+                            {{else}}
+                            <button id="finish-chapter" class="ui huge button">Chapter finshied</button>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ui vertical stripe segment">
+        <div class="ui middle aligned stackable grid container">
+        <h1>COntent</h1>
+        </div>
+    </div>
+</template>

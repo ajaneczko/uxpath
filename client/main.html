@@ -1,0 +1,423 @@
+<head>
+  <title>simple</title>
+</head>
+
+
+
+<template name="main">
+  {{> hello}}
+
+</template>
+<template name="header">
+
+  <!-- Following Menu -->
+
+  <div class="ui large top fixed hidden menu">
+    <div class="ui container">
+      <a class="item"><i class="rocket icon"></i></a>
+      {{#each chaptersFinished}}
+        {{>chapterFinished}}
+      {{/each}}
+
+      {{#each chapters}}
+        {{>chapter}}
+      {{/each}}
+      <a class="item"><i class="icon trophy"></i></a>
+      <a class="item" href="/learning-materials"><i class="student icon"></i>Learning materials</a>
+    </div>
+
+  </div>
+
+</template>
+
+<template name="mainLesson">
+  <div class=" step">
+    {{#if status}}
+    <i class="checkmark green icon"></i>
+    {{else}}
+    {{/if}}
+
+    <div class="content">
+      <div class="title">{{title}}</div>
+  </div>
+  </div>
+</template>
+<template name="chapterFinished">
+  <a class="blue item">
+    {{title}}
+  </a>
+</template>
+<template name="chapter">
+  {{#if isFirst}}
+  <a class="blue item">
+      <i class="icon "><div class="circle-ripple"><img src="images/mentee.jpeg" style="
+    width: 20px;
+    position: relative;
+    top: 0px;
+    border-radius: 100px;
+    height: 20px;
+"></div></i>{{title}}</a>
+
+    {{else}}
+    <a class="blue disabled item">{{title}}</a>
+    {{/if}}
+
+</template>
+<template name="hello">
+
+
+  {{>header}}
+
+  <!-- Page Contents -->
+  <div class="pusher">
+    <div id="header" class="ui inverted vertical masthead center aligned segment">
+
+      <div class="ui container">
+        <h1 class="ui icon header">
+          <img src="images/logo.png">
+          <br>
+          <br>
+          <div class="content title">
+            User Experience Path
+          </div>
+        </h1>
+        <h2>TechJump mentoring program 2016</h2>
+      </div>
+    </div>
+
+    {{>chapterZero}}
+    {{>chapterOne}}
+    {{>chapterTwo}}
+    {{>chapterThree}}
+    {{>chapterFour}}
+    {{>chapterFive}}
+
+  </div>
+
+</template>
+<template name="chapterZero">
+
+  <div id="tj-main-column-zero-chapter" class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row tj-main-columns-wrapper">
+        <div class="seven wide column tj-main-column">
+          <h3 class="ui header">Welcome!</h3>
+          <p>The overall goal of User Experience is to help design better products, services, processes, strategies, spaces, architecture, and experiences.</p>
+          <p>This mentorship program should help develop mindset to solve practical problems facing in daily basis.</p>
+          <p>Meetups are splitted into chapters, each about different part of UX design process. Along the progress there will be a practical project aimed into train particular skills and making overall experience more challenging (hope so).
+          </p>
+          <p>Let's start! 👊</p>
+
+        </div>
+        <div class="eight wide right floated column tj-main-column tj-main-column-todo">
+          <div class="row">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/k9Nh0Fvoe9k" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <br>
+          <br>
+
+          <div class="row">
+            <div class="center aligned column">
+              {{#if chapterFinished}}
+              <button id="finish-chapter" class="ui huge positive button">Onboarding finished</button>
+              {{else}}
+              <button id="finish-chapter" class="ui huge button">Finish onboarding</button>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</template>
+<template name="chapterOne">
+  <div id="chapterOne" class="ui vertical stripe segment ">
+
+    <div class="ui middle aligned stackable grid container">
+      <div class="row tj-main-columns-wrapper">
+        <div class="seven wide column tj-main-column">
+
+          <div id="chapter-title" class="tj-main-chapter-title-wrapper tj-main-chapter-img chapter-one-image">
+
+            <h1 class="ui header">Chapter #1</h1>
+
+          </div>
+          <h3 class="ui header">
+
+            <div class="content">
+              Introduction
+              <div class="sub header"><i class="calendar outline icon"></i>Available {{dueTime}}</div>
+            </div>
+          </h3>
+          <p>You have decided to learn new superpowers, good decision!</p>
+          <p>UX design is in the best position to defend the users, but it is equally important to have a balance between user goals, and business goals.</p>
+            <p>At this chapter we will cover some important aspects of UX way of thinking, and align it to the organisation and practical approach.</p>
+
+        </div>
+        <div class="eight wide right floated column tj-main-column tj-main-column-todo not-read">
+          <div class="row">
+            <h2 class="ui header">
+              <img src="images/begginer.png" class="ui image">
+              <div class="content">
+                Beginer
+
+              </div>
+            </h2>
+          </div>
+          <br>
+          <div class="row">
+            <div class="ui vertical steps" style="width: 100%;">
+              {{#each lessons}}
+                {{>mainLesson}}
+              {{/each}}
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="center aligned column">
+
+              <button id="go-to-chapter-one" class="ui right labeled positive icon button">
+                <i class="right arrow icon"></i>
+                Go to lesson
+              </button>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</template>
+<template name="chapterTwo">
+  <div id="chapterTwo" class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row tj-main-columns-wrapper">
+        <div class="seven wide column tj-main-column ">
+
+          <div class="tj-main-chapter-title-wrapper tj-main-chapter-img chapter-two-image ">
+            <h1 class="ui header">Chapter #2</h1>
+
+          </div>
+          <h3 class="ui header">
+
+            <div class="content">
+              Principles of User Experience
+              <div class="sub header"><i class="calendar outline icon"></i>Available {{dueTime}}</div>
+            </div>
+          </h3>
+
+          <p>A beginning is delicate time, care that the balances are correct. With basics knowladge about how UX fits your work, and practical concept, it is good to have solid understanding where UX starts, and what are the origins. As far as UX is very broad concept, it alwayas serve as a way to achive the usability in solution.</p>
+        </div>
+        <div class="eight wide right floated column tj-main-column tj-main-column-todo not-read ">
+          <div class="row">
+            <h2 class="ui header">
+              <img src="images/novice.png" class="ui image">
+              <div class="content">
+                Novice
+
+              </div>
+            </h2>
+          </div>
+          <br>
+          <div class="row">
+            <div class="ui vertical steps" style="width: 100%;">
+              {{#each lessons}}
+              {{>mainLesson}}
+              {{/each}}
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="center aligned column">
+
+              <button class="ui right labeled positive icon button">
+                <i class="right arrow icon"></i>
+                Go to lesson
+              </button>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</template>
+<template name="chapterThree">
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row tj-main-columns-wrapper">
+        <div class="seven wide column tj-main-column">
+
+          <div class="tj-main-chapter-title-wrapper tj-main-chapter-img chapter-three-image">
+            <h1 class="ui header">Chapter #3</h1>
+          </div>
+          <h3 class="ui header">
+
+            <div class="content">
+              Strategy and research
+              <div class="sub header"><i class="calendar outline icon"></i>Available {{dueTime}}</div>
+            </div>
+          </h3>
+
+          <p>There is no UX without a deep understending of user goals. User research are the ways to uncover the uniqe value behind a product, empathy to user can be only achive by observing them in action. At this chapter we will cover the most important research techniqs.</p>
+        </div>
+        <div class="eight wide right floated column tj-main-column tj-main-column-todo not-read">
+          <div class="row">
+            <h2 class="ui header">
+              <img src="images/pretendent.png" class="ui image">
+              <div class="content">
+                Pretendent
+
+              </div>
+            </h2>
+          </div>
+          <br>
+          <div class="row">
+            <div class="ui vertical steps" style="width: 100%;">
+              {{#each lessons}}
+              {{>mainLesson}}
+              {{/each}}
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="center aligned column">
+
+              <button class="ui right labeled icon positive button">
+                <i class="right arrow icon"></i>
+                Go to lesson
+              </button>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</template>
+<template name="chapterFour">
+  <div class="ui vertical stripe segment ">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row tj-main-columns-wrapper">
+        <div class="seven wide column tj-main-column">
+
+          <div class="tj-main-chapter-title-wrapper tj-main-chapter-img chapter-four-image ">
+            <h1 class="ui header">Chapter #4</h1>
+       
+          </div>
+          <h3 class="ui header">
+
+            <div class="content">
+              Information architecture
+              <div class="sub header"><i class="calendar outline icon"></i>Available {{dueTime}}</div>
+            </div>
+          </h3>
+          <p>AI influences what we buy and where we go, and how we navigate throught the app. It shapes how we learn from interface. That is way it is extremly imporant to make navigation usefull and intutitive. A this chapter we will cover some basic navigation patterns, both for mobile apps, and web.</p>
+        </div>
+        <div class="eight wide right floated column tj-main-column tj-main-column-todo not-read ">
+          <div class="row">
+            <h2 class="ui header">
+              <img src="images/intermidiant.png" class="ui image">
+              <div class="content">
+                Intermidiant
+              </div>
+            </h2>
+          </div>
+          <br>
+          <div class="row">
+            <div class="ui vertical steps" style="width: 100%;">
+              {{#each lessons}}
+              {{>mainLesson}}
+              {{/each}}
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="center aligned column">
+
+              <button class="ui right labeled icon positive button">
+                <i class="right arrow icon"></i>
+                Go to lesson
+              </button>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</template>
+<template name="chapterFive">
+  <div class="ui vertical stripe segment ">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row tj-main-columns-wrapper">
+        <div class="seven wide column tj-main-column">
+
+          <div class="tj-main-chapter-title-wrapper tj-main-chapter-img chapter-five-image ">
+            <h1 class="ui header">Chapter #5</h1>
+
+          </div>
+          <h3 class="ui header">
+
+            <div class="content">
+              Prototyping
+              <div class="sub header"><i class="calendar outline icon"></i>Available {{dueTime}}</div>
+            </div>
+          </h3>
+          <p>One of the greates benefits of prototypes it that you can learn from them faster, and more accurate, then just assuming things about our product. Prototype driven developemnt, allows you to verify product hypothesis very soon that is way you can be more agile. At this chapter we will learn how to create informative prototypes, and verify them.</p>
+        </div>
+        <div class="eight wide right floated column tj-main-column tj-main-column-todo not-read ">
+          <div class="row">
+            <h2 class="ui header">
+              <img src="images/intermidiant.png" class="ui image">
+              <div class="content">
+                Intermidiant
+              </div>
+            </h2>
+          </div>
+          <br>
+          <div class="row">
+            <div class="ui vertical steps" style="width: 100%;">
+              {{#each lessons}}
+              {{>mainLesson}}
+              {{/each}}
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="center aligned positive column">
+
+              {{/if}}
+              <button class="ui right labeled icon button">
+                <i class="right arrow icon"></i>
+                Go to lesson
+              </button>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</template>
+
