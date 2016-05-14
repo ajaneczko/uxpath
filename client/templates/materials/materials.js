@@ -3,6 +3,12 @@ Template.learningMaterials.onRendered(function(){
 
 })
 
+Template.learningMaterials.events({
+  'click #backToMain': function() {
+      Router.go('/');
+  }
+});
+
 
 Template.header.helpers({
     chapters: function() {

@@ -1,23 +1,36 @@
 <template name="learningMaterials">
-    {{>chapterHeader}}
-    <div class="ui container">
+    <div class="chapter-header">
+        <div class="ui fixed top">
+            <h2 class="ui header" style="box-shadow: 1px 1px 1px 1px #eee;">
+                <i id="backToMain" class="angle left huge icon"></i>
+                <div class="content">
+                    Learning materials
+                </div>
+            </h2>
 
-        {{>sites}}
-        {{>resources}}
-        {{>blogs}}
-        {{>podcasts}}
-        {{>books}}
-        {{>tools}}
-        {{>courses}}
-        {{>people}}
-        <br>
-        <br>
-        <br>
-        <br>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="ui container">
+
+            {{>sites}}
+            {{>resources}}
+            {{>blogs}}
+            {{>podcasts}}
+            {{>books}}
+            {{>tools}}
+            {{>courses}}
+            {{>people}}
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
     </div>
 </template>
 
 <template name="sites">
+
     <h2 class="ui header">
         Newsletters
         <div class="sub header">Daily sources of inspiration for UX/UI designers.</div>

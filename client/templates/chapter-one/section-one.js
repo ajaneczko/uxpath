@@ -2,7 +2,7 @@ Template.sectionOne.onRendered(function () {
     Session.set('counter',0);
     $('#example2')
           .progress({
-            total: 20
+            total: 15
           })
         ;
 
@@ -27,11 +27,19 @@ Template.sectionOne.events({
     console.log('mess' + counter)
     $('#mess'+counter).removeClass('hidden')
     console.log(counter)
-    var progres = (counter/20) * 100
+    var progres = (counter/15) * 100
     console.log(progres)
-    $('#example2').progress({
-     percent: progres
-    });
+    if (counter == 15) {
+
+        console.log(progres)
+        $('#nextMessage').addClass('disabled')
+    }
+
+    if (counter < 16) {
+        $('#example2').progress({
+         percent: progres
+        });
+    }
 
   },
   'click #backToMain': function() {
