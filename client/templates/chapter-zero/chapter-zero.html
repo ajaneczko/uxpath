@@ -1,0 +1,145 @@
+<template name="chapterZeroLesson">
+    <div class="chapter-header">
+
+        <div class="ui fixed top">
+
+            <h2 class="ui header">
+                <i id="backToMain" class="angle left huge icon"></i>
+                <div class="content">
+                    Initial meeting 👋
+                </div>
+            </h2>
+
+        </div>
+        <div class="ui teal progress chapter-progress-bar" id="example2">
+            <div class="bar">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ui vertical stripe segment">
+        <div class="ui equal width stackable internally celled grid">
+            <div class="row">
+                <div class="ui middle aligned stackable grid container">
+                    <div class="ui list">
+                        <div id="mess0" class="ui icon message">
+                            <img class="avatar" src="images/ajavatar.png">
+
+                            <div class="content">
+                                <div class="header">
+                                    Hi there!
+                                </div>
+                                <p>I'm Arek, a UX designer from Seals Team in Gdańsk! I will be your mentor for next few months.</p>
+                            </div>
+                        </div>
+                        <div id="mess1" class="ui icon hidden message">
+                            <div class="content">
+                                <img src="https://media.giphy.com/media/3ornk57KwDXf81rjWM/giphy.gif">
+                                <p>Hopefully we will spend time, on exploring User Experience toghether. Before we start anything, it is good to setup proper rules of meetings.</p>
+                        </div>
+                        </div>
+                        <div id="mess2" class="ui icon hidden message">
+                            <div class="content">
+                                <p>First of all i would like to ask you about your experience in UX filed.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="mess3" class="ui icon hidden message">
+                            <div class="content">
+                                <p>What is also very important, are your expectations, about this program and what you would like to learn. Name a few. </p>
+                            </div>
+                        </div>
+
+                        <div id="mess4" class="ui icon hidden message">
+                            <i class="wizard icon"></i>
+                            <div class="content">
+                                <div class="header">
+                                    Some high level goals of mentoring program.
+                                </div>
+                                <div class="ui huge list">
+                                    <div class="item">Acquire UX mindset.</div>
+                                    <div class="item">Learn basics of user centered design process.</div>
+                                    <div class="item">Empower you to use some of skills in day to day job.</div>
+                                    <div class="item">Allow to gain further knowledge.</div>
+                                    <div class="item">Do something different and FUN.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="mess5" class="ui icon hidden message">
+                            <i class="calendar icon"></i>
+                            <div class="content">
+                                <div class="header">
+                                    Let's agree on some fixed scheduling
+                                </div>
+                                <div class="ui huge list">
+                                    <div class="item">4 hours once two weeks?</div>
+                                    <div class="item">2 hours once a week</div>
+                                    <div class="item">One whole day once  month.</div>
+                                    <div class="item">Any other ...</div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="mess6" class="ui icon hidden message">
+                            <div class="content">
+                                <div class="header">
+                                    What we will 'discuss' in more details.
+                                </div>
+
+                                <div class="ui huge list">
+                                    <div class="item">Program is splited into chapters. Each chapter corespnds to some step of UX Design process.</div>
+                                    <div class="item">UX as a practice, roles, business value, books learning materials</div>
+                                    <div class="item">Principles of UX design, and User Centered Design</div>
+                                    <div class="item">Coundact a project, from defining the user needs, minimum viable product to prototyping, and delivering UX/UI concept.</div>
+                                    <div class="item">We will learn basics of tools to prototyping like Sketch, FramerJS for mobile.</div>
+                                    <div class="item">We will also go and disscuss popular UI patterns both mobile and web, to see what is trending today.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="mess7" class="ui icon hidden message">
+                            <div class="content">
+                                <p>The question is if this plan is acceptable for you, at this stage?!  </p>
+                            </div>
+                        </div>
+                        <br>
+                        {{#if isFirst}}
+                        <button id="nextMessage" class="ui primary button">
+                            <i class="icon "><div class="circle-ripple"><img src="images/mentee.jpeg" style="
+                            width: 20px;
+                            position: relative;
+                            top: 0px;
+                            border-radius: 100px;
+                            height: 20px;
+                        "></div></i> Tell me more!
+                        </button>
+
+                        {{else}}
+                        <button id="nextMessage" class="ui primary button">
+                            Tell me more!
+                        </button>
+                        {{/if}}
+
+                        {{#if isLast}}
+                        <button id="finishChapter" class="ui primary positive button">
+                            <i class="icon "><div class="circle-ripple"><img src="images/mentee.jpeg" style="
+                            width: 20px;
+                            position: relative;
+                            top: 0px;
+                            border-radius: 100px;
+                            height: 20px;
+                        "></div></i>  Finish this chapter
+                        </button>
+                        {{/if}}
+                        <br>
+                        <br>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</template>

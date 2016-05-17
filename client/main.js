@@ -62,9 +62,10 @@ Template.chapterOne.created = function () {
 };
 
 Template.chapterZero.events({
-  'click #finish-chapter'(event, instance) {
-    finishChapter('Chapter #0')
+  'click #go-to-chapter-zero'(event, instance) {
+    Router.go('/chapter-zero');
   },
+
 })
 
 

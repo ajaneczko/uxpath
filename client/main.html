@@ -1,5 +1,15 @@
 <head>
   <title>simple</title>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77854679-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </head>
 
 
@@ -106,7 +116,6 @@
           <p>This mentorship program should help develop mindset to solve practical problems facing in daily basis.</p>
           <p>Meetups are splitted into chapters, each about different part of UX design process. Along the progress there will be a practical project aimed into train particular skills and making overall experience more challenging (hope so).
           </p>
-          <p>Let's start! 👊</p>
 
         </div>
         <div class="eight wide right floated column tj-main-column tj-main-column-todo">
@@ -118,11 +127,10 @@
 
           <div class="row">
             <div class="center aligned column">
-              {{#if chapterFinished}}
-              <button id="finish-chapter" class="ui huge positive button">Onboarding finished</button>
-              {{else}}
-              <button id="finish-chapter" class="ui huge button">Finish onboarding</button>
-              {{/if}}
+              <button id="go-to-chapter-zero" class="ui right labeled positive icon button">
+                <i class="right arrow icon"></i>
+                Let's start!
+              </button>
             </div>
           </div>
         </div>
@@ -156,7 +164,7 @@
             <p>At this chapter we will cover some important aspects of UX way of thinking, and align it to the organisation and practical approach.</p>
 
         </div>
-        <div class="eight wide right floated column tj-main-column tj-main-column-todo not-read">
+        <div class="eight wide right floated column tj-main-column tj-main-column-todo">
           <div class="row">
             <h2 class="ui header">
               <img src="images/begginer.png" class="ui image">
