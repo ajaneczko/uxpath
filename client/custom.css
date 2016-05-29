@@ -70,14 +70,25 @@
   z-index: 10000
 }
 
+.chapter-header .steps {
+  margin-bottom: 0px;
+}
+
+.ui.message {
+  box-shadow: none !important;
+
+}
+
 .chapter-progress-bar {
   margin-bottom: 0px !important;
+  margin-top: 0px !important;
   border-radius: 0px !important;
   height: 10px !important;
 }
 
 #example2 .bar {
   border-radius: 0px !important;
+
 }
 
 #backToMain {
@@ -89,5 +100,5 @@
   width: 60px;
   height: 60px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 100px;
 }

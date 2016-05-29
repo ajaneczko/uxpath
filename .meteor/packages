@@ -41,3 +41,4 @@ http
 es5-shim
 standard-minifier-css
 standard-minifier-js
+matfin:meteor-contentful@1.5.4

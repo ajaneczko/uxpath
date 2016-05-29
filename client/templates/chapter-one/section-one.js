@@ -1,16 +1,37 @@
 Template.sectionOne.onRendered(function () {
-    Session.set('counter',0);
     $('#example2')
-          .progress({
-            total: 15
-          })
-        ;
+      .progress({
+        total: 31
+      })
+    ;
 
     $('#example2')
-              .progress({
-                percent: 0
-              })
-            ;
+      .progress({
+        percent: 0
+      })
+    ;
+
+    $('.ui.checkbox').checkbox();
+    var counter = Session.get('counter')
+
+    if (counter === undefined) {
+          Session.set('counter',0);
+
+        } else {
+
+             var progres = (counter/31) * 100
+            console.log(progres)
+            $('#example2').progress({
+             percent: progres
+            });
+            for (i = 0; i < counter; i++) {
+                $('#mess'+i).removeClass('hidden')
+
+            }
+
+        }
+
+
 });
 
 
@@ -24,15 +45,23 @@ Template.sectionOne.events({
       .transition('fly down')
     ;
     Session.set('counter', counter)
-    console.log('mess' + counter)
     $('#mess'+counter).removeClass('hidden')
     console.log(counter)
-    var progres = (counter/15) * 100
-    console.log(progres)
-    if (counter == 15) {
-
-        console.log(progres)
+    var progres = (counter/31) * 100
+    if (counter == 31) {
         $('#nextMessage').addClass('disabled')
+    }
+
+    if (counter == 8) {
+        $('#step1').removeClass('active')
+        $('#step1').addClass('completed')
+        $('#step2').addClass('active')
+    }
+
+    if (counter == 14) {
+        $('#step3').addClass('active')
+        $('#step2').removeClass('active')
+        $('#step2').addClass('completed')
     }
 
     if (counter < 16) {
@@ -40,6 +69,7 @@ Template.sectionOne.events({
          percent: progres
         });
     }
+
 
   },
   'click #backToMain': function() {

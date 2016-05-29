@@ -43,8 +43,8 @@ Template.chapterTwoLessons.events({
 
 },
 'click #backToMain': function() {
-        Router.go('/');
-    }
+    Router.go('/');
+}
 });
 
 Template.chapterTwoLessons.helpers({
