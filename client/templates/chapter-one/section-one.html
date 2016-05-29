@@ -7,11 +7,50 @@
                 <h2 class="ui header">
                     <i id="backToMain" class="angle left huge icon"></i>
                     <div class="content">
-                        Introduction
+                        Principles of User Experience
                     </div>
                 </h2>
 
             </div>
+
+        <div class="ui fluid steps" style="margin-top:0px;">
+            <div id="step1" class="active step">
+                <i class="icon"></i>
+                <div class="content">
+                    <div class="title">Lesson 1</div>
+                    <div class="description">What User Experience actually is?
+                    </div>
+                </div>
+            </div>
+            <div id="step2" class="step">
+                <i class=" icon"></i>
+                <div class="content">
+                    <div class="title">Lesson 2</div>
+                    <div class="description">UX as a practice and the roles that make it up.</div>
+                </div>
+            </div>
+            <div id="step3" class="step">
+                <i class="icon"></i>
+                <div class="content">
+                    <div class="title">Lesson 3</div>
+                    <div class="description">User Centered Design Process</div>
+                </div>
+            </div>
+            <div id="step4" class="step">
+                <i class=" icon"></i>
+                <div class="content">
+                    <div class="title">Lesson 4</div>
+                    <div class="description">The “founding fathers” of UX</div>
+                </div>
+            </div>
+            <div id="step5" class="step">
+                <i class=" icon"></i>
+                <div class="content">
+                    <div class="title">Lesson 5</div>
+                    <div class="description"> Defining the challenge</div>
+                </div>
+            </div>
+        </div>
         <div class="ui teal progress chapter-progress-bar " id="example2">
             <div class="bar">
             </div>
@@ -19,10 +58,12 @@
     </div>
 
 
-    <div class="ui vertical stripe segment">
+    <div class="ui vertical stripe segment" >
         <div class="ui equal width stackable internally celled grid">
-            <div class="row">
-                <div class="ui middle aligned stackable grid container">
+
+            <div class="row" style="margin-top:100px;">
+
+                <div id="messages-wrapper" class="ui middle aligned stackable grid container">
                     <div class="ui list">
                         <div id="mess0" class="ui icon message">
                             <img class="avatar" src="images/ajavatar.png">
@@ -34,43 +75,31 @@
                                 <p>I'm Arek, a UX designer from Seals Team in Gdańsk! Let's start mentoring program, and explore some of the basic concepts about User Experience.</p>
                             </div>
                         </div>
-                        <div id="mess1" class="ui icon hidden message">
-                            <i class="write icon"></i>
+
+                        <div id="mess1" class="ui icon teal huge hidden message">
                             <div class="content">
-                                <p>Think for a while, and ask yourself how do you understand term User Experience? What are your most strong associations? Write them down if possible!</p>
+                                    What user experience is?
                             </div>
                         </div>
                         <div id="mess2" class="ui icon hidden message">
+                            <i class="write icon"></i>
                             <div class="content">
                                 <div class="header">
-                                    What user experience is?
+                                    Ask yourself following questions!
                                 </div>
-                                <p>Plenty of definitions, out there, but the most humanized one could be - You know when you’re using a website, an app, or your phone and you get frustrated when it doesn't do what you want it to? My job is to make sure that doesn't happen..</p>
+                                <p style="font-style:italic"> How do you understand term User Experience? What are your most strong associations? </p>
+                                <p style="font-style:italic"> Who is responsible for User Experience in team?</p>
+                                <p style="font-style:italic">What deliverables User Experience Designer should bring to the table?</p>
+                                <p>Write them down if possible!</p>
                             </div>
                         </div>
                         <div id="mess3" class="ui icon hidden message">
-                            <div class="content">
-
-                                <p>Each of us feals a little bit different what a good design is, and very often people has purly intuitive definition. There is NO one good answer, for some it is more logo, for others UI. Look at this how others define what UX is for them. </p>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/rWaoNNAuhBI" frameborder="0" allowfullscreen></iframe>
-                            </div>
+                            {{>quizOne}}
                         </div>
                         <div id="mess4" class="ui icon hidden message">
-                            <i class="write icon"></i>
-                            <div class="content">
-                                <p>What did you like from this video? </p>
-                            </div>
-                        </div>
-                        <id id="mess5" class="ui icon huge hidden message">
-                            <div class="content">
-                                <p>I like the definition that "Design is a set of decisions about the product"</p>
-                            </div>
-                        </id>
-                        <div id="mess6" class="ui icon hidden message">
                             <div class="content">
 
                                 <p>The first important thing to get a user experience thinking is to meet the exact needs of the customer, without fuss or bother. Next comes simplicity and elegance that produce products that are a joy to own, a joy to use. True user experience goes far beyond giving customers what they say they want, or providing checklist features.
-
                                     It's important to distinguish the total user experience from the user interface (UI), even though the UI is obviously an extremely important part of the design.
                                 </p>
                                 <p>
@@ -78,31 +107,57 @@
                             </div>
                         </div>
 
+                        <div id="mess5" class="ui icon hidden message imagee">
+                            <div class="content">
+
+                                <img style="width:600px" src="https://s3-us-west-2.amazonaws.com/uxpath/static/uxisnotui.png">
+                            </div>
+                        </div>
+                        <div id="mess6" class="ui icon hidden message">
+                            <div class="content" style="text-align:center">
+                               <iframe width="560" height="315" src="https://www.youtube.com/embed/rWaoNNAuhBI" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
                         <div id="mess7" class="ui icon hidden message">
                             <i class="write icon"></i>
                             <div class="content">
-                                <div class="header">
-                                    Knock, knock
-                                </div>
-                                <p>Yeah, to frame a context a little bit, let's go throught your experience. Write down (on your paper), 3 things that development teams, benefits from UX Design in general. </p>
+                                <p>What did you like from this video? </p>
                             </div>
                         </div>
-                        <div id="mess8" class="ui icon hidden message">
+                        <id id="mess8" class="ui icon huge hidden message">
+                            <div class="content">
+                                <p>I like the definition that "Design is a set of decisions about the product"</p>
+                            </div>
+                        </id>
+
+                        <div id="mess9" class="ui icon huge teal hidden message">
+                            <div class="content">
+                                <p>UX as a practice and the roles that make it up. </p>
+                            </div>
+                        </div>
+                        <div id="mess10" class="ui icon hidden message">
+                            <i class="write icon"></i>
+                            <div class="content">
+
+                                <p>Write down (on your paper), 3 things that development teams, can benefits from UX Design in general. </p>
+                            </div>
+                        </div>
+                        <div id="mess11" class="ui icon hidden message">
                             <div class="content">
                                 <p>Companies are starting to realize the importance of centering their products and experiences around the user. They’re investing in professionals who can get UX practices off the ground and refocus their business approach. So the question is what acctualy UX designer DO? And what is the magic behind it? </p>
                             </div>
                         </div>
-                        <div id="mess9" class="ui icon hidden message">
+                        <div id="mess12" class="ui icon hidden message">
                             <div class="content">
                                 <p>Approaching UX as a practice made up of specific disciplines creates clarity and hierarchy. UX is the practice: strategy, user research, information architecture, and visual design make up each discipline. Titles follow suit, so there’s no confusion about who does what.  ? </p>
                             </div>
                         </div>
-                        <div id="mess10" class="ui icon hidden message">
+                        <div id="mess13" class="ui icon hidden imagee message">
                             <div class="content">
                                 <img src="images/chapterOneRoles.png"/>
                             </div>
                         </div>
-                        <div id="mess11" class="ui icon hidden message">
+                        <div id="mess14" class="ui icon hidden message">
                             <div class="content">
                                 <p>
                                    From this picture we have few roles, with more focus on particular element of UX
@@ -118,10 +173,79 @@
                             </div>
                         </div>
 
-                        <div id="mess12" class="ui icon hidden message">
+                        <div id="mess15" class="ui icon hidden message">
                             <p>During this program we will try to cover particular building blocks of UX to some extent. What is more imporant, is that this are not sepereted things, and they must work in a process that in the end allows you to craft better products. </p>
                         </div>
-                        <div id="mess13" class="ui icon hidden message">
+                        <div id="mess16" class="ui icon huge teal hidden message">
+                            <div class="content">
+                                <p>User Centered Design process.</p>
+                            </div>
+                        </div>
+                        <div id="mess17" class="ui icon hidden message">
+                            <i class="write icon"></i>
+                            <div class="content">
+                                <p>Could you describe how development process wokr in your team and product? </p>
+                            </div>
+                        </div>
+                        <div id="mess18" class="ui icon hidden message imagee">
+                            <div class="content">
+                                <img src="https://s3-us-west-2.amazonaws.com/uxpath/static/ucd.png"/>
+                            </div>
+                        </div>
+                        <div id="mess19" class="ui icon hidden message imagee">
+                            <div class="content">
+                                <img src="https://s3-us-west-2.amazonaws.com/uxpath/static/ucd2.jpg"/>
+                            </div>
+                        </div>
+                        <div id="mess20" class="ui icon huge teal hidden message">
+                            <div class="content">
+                                <p>Founding fathers of User Exeprience.</p>
+                            </div>
+                        </div>
+                        <div id="mess21" class="ui icon hidden message">
+                            <div class="content">
+                                <p>What we now call “user experience design” began a lot longer ago. In fact, you can trace UX design way back, all the way to when humans created the first tools. A tool in its most basic form is an object that supports the accomplishment of a task, and tools that are well suited to the job at hand makes our lives better.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="mess22" class="ui icon hidden message">
+                            <div class="content">
+                                <p>That “fairly recent” moment took place over a sixty years ago, when engineers started looking at “human factors” when designing equipment to fight World War 2. The term “ergonomics” was popularized after the war. The question is who is responsible for making technology more human? </p>
+                            </div>
+                        </div>
+                        <div id="mess23" class="ui icon hidden message">
+                            <div class="content">
+                                <div class="header">
+                                    Founding fathers of UX
+                                </div>
+                                <p><img src="images/foundingFathers.png"></p>
+                                <p>So these are the founding fathers so to speak of modern User Experience. They all made a very important things, but among others the most awesome one, was that, they humanized technology in way that it was more human centric.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="mess24" class="ui icon hidden message">
+                            <i class="comment icon"></i>
+                            <div class="content">
+                                <p>To learn more about those undeniably important charsmatic personas, read article <a href="http://www.josephdickerson.com/blog/2013/03/14/ux-101-a-brief-history-of-ux-design/"> about brieft hisotry of ux design.</a>
+                                    Think for a while which thinkerer you liked the most?</p>
+                            </div>
+                        </div>
+                        <div id="mess25" class="ui icon hidden message">
+                            <div class="content">
+
+                                <p>I particularly value Don Norman, the author of "The design of everyday things". His effort was quite influential. He extended usability beyond digital products and putted more emphasis on how we use things in our everyday life.
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="mess26" class="ui icon hidden message">
+                            <div class="content">
+                                <p>This movie is interesting way explains what are the Norman's Door the example of baddly designed object that we use in daily basis. 👇 </p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/yY96hTb8WgI" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div id="mess27" class="ui icon hidden message">
                             <i class="write icon"></i>
                             <div class="content">
                             <div class="header">
@@ -130,7 +254,7 @@
                             <p>To achive more consistant workflow we will do a project along the program.  Each chapter will be finished by some project deliverables, that UX designer should bring to the table working with the team.</p>
                             </div>
                         </div>
-                        <div id="mess14" class="ui icon hidden message">
+                        <div id="mess28" class="ui icon hidden message">
                             <i class="write icon"></i>
                             <div class="content">
                             <div class="header">
@@ -139,7 +263,16 @@
                             <p>Think about, what bothers you in daily life. Did you observe any types of activites that can be improved, or extend via some digital products? Maybe you have an idea on how to improve sobodys life? Think about these things and write it down. With this on next meeting we can start creating a UX concept.</p>
                             </div>
                         </div>
-                        <div id="mess15" class="ui icon hidden message">
+                        <div id="mess29" class="ui icon hidden message">
+                            <i class="write icon"></i>
+                            <div class="content">
+                                <div class="header">
+                                    Homework
+                                </div>
+                                <p>Read Chapter 6 "Design thinking", from Don's Norman "The design of everyday things". And think about how this approach is "used" by your team/steakholders etc, on daily basis at work.</p>
+                            </div>
+                        </div>
+                        <div id="mess30" class="ui icon hidden message">
 
                             <div class="content">
                                 <div class="header">
@@ -185,12 +318,6 @@
                             <div class="item">
                                 <i class="student icon"></i>
                                 <div class="content">
-                                    <a class="header" href="https://www.nngroup.com/articles/enhancement/"> Nielsen Norman Group</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <i class="student icon"></i>
-                                <div class="content">
                                     <a class="header" href="http://www.helloerik.com/know-your-ux-hats"> Know Your UX Hats</a>
                                 </div>
                             </div>
@@ -206,10 +333,34 @@
                                     <a class="header" href="  http://www.lukew.com/ff/"> Luke Wroblewski blog</a>
                                 </div>
                             </div>
+                            <div class="item">
+                                <i class="student icon"></i>
+                                <div class="content">
+                                    <a class="header" href="http://blog.invisionapp.com/common-ux-misconceptions/">Common ux misconceptions</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="student icon"></i>
+                                <div class="content">
+                                    <a class="header" href="http://uxmyths.com/">UX Myths</a>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
             </div>
         </div>
     </div>
+</template>
+<template name="quizOne">
+        <i class="comment icon"></i>
+        <div class="content">
+            <div class="header">
+               User Experience is ... (for someone's)
+            </div>
+            <p><q style="font-style:italic"> It is how site looks and feels like!? </q></p>
+            <p><q style="font-style:italic"> It is what type of font we will use at landing page!?</q></p>
+            <p><q style="font-style:italic">It is what color of buttons across the whole app!?</q></p>
+            <p><q style="font-style:italic">It is about making things pretty.</q></p>
+        </div>
 </template>

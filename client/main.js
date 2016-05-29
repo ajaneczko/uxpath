@@ -21,6 +21,13 @@ Template.header.helpers({
 
 Template.hello.onRendered(function () {
     Tracker.autorun(function() {
+
+           Meteor.subscribe('assets');
+          Meteor.subscribe('entries');
+          Meteor.subscribe('contentTypes');
+           console.log()
+
+
         Meteor.subscribe('myChapters');
       });
  $('.masthead')
@@ -58,6 +65,10 @@ Template.hello.events({
 Template.chapterOne.created = function () {
   Tracker.autorun(function() {
     Meteor.subscribe('allChapters');
+    Meteor.subscribe('assets');
+    Meteor.subscribe('entries');
+    Meteor.subscribe('contentTypes');
+    console.log()
   });
 };
 
@@ -111,7 +122,7 @@ Template.chapterOne.helpers({
       return lessons
       },
   'dueTime': function () {
-    var dueTime = moment("20160513", "YYYYMMDD").fromNow()
+    var dueTime = moment("20160530", "YYYYMMDD").fromNow()
     return dueTime
   }
 })
@@ -147,12 +158,12 @@ Template.chapterThree.events({
 
 Template.chapterThree.helpers({
   'chapterFinished':function() {
-    var chapter = Chapters.findOne({title: 'Chapter #3'});
+    var chapter = Chapters.findOne({title: 'Chapter #2'});
     var status = chapter.status
     return status
   },
     'lessons':function() {
-          var chapter = Chapters.findOne({title: 'Chapter #3'});
+          var chapter = Chapters.findOne({title: 'Chapter #2'});
           var lessons = chapter.lessons
           return lessons
         },

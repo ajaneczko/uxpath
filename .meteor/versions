@@ -60,7 +60,7 @@ iron:core@1.0.11
 iron:dynamic-template@1.0.12
 iron:layout@1.0.12
 iron:location@1.0.11
-iron:middleware-stack@1.0.11
+iron:middleware-stack@1.1.0
 iron:router@1.0.12
 iron:url@1.0.11
 jquery@1.11.8
@@ -69,6 +69,8 @@ launch-screen@1.0.11
 livedata@1.0.18
 localstorage@1.0.9
 logging@1.0.12
+matb33:collection-hooks@0.7.15
+matfin:meteor-contentful@1.5.4
 meteor@1.1.14
 meteor-base@1.0.4
 meteor-platform@1.2.6
