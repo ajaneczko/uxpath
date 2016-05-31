@@ -256,3 +256,7 @@
     box-shadow: 0 0 0 1em rgba(101, 255, 120, 0.3), 0 0 0 3em rgba(101, 255, 120, 0.3), 0 0 0 5em rgba(101, 255, 120, 0.3), 0 0 0 8em rgba(101, 255, 120, 0);
   }
 }
+
+.chapter .sub.header {
+    padding-top: 10px !important;
+}

@@ -8,6 +8,44 @@
                 </div>
             </h2>
         </div>
+        <div class="ui fluid steps" style="margin-top:0px;">
+            <div id="step1" class="active step">
+                <i class="icon"></i>
+                <div class="content">
+                    <div class="title">Lesson 1</div>
+                    <div class="description">The lean startup methodology
+                    </div>
+                </div>
+            </div>
+            <div id="step2" class="step">
+                <i class=" icon"></i>
+                <div class="content">
+                    <div class="title">Lesson 2</div>
+                    <div class="description">...</div>
+                </div>
+            </div>
+            <div id="step3" class="step">
+                <i class="icon"></i>
+                <div class="content">
+                    <div class="title">Lesson 3</div>
+                    <div class="description">...</div>
+                </div>
+            </div>
+            <div id="step4" class="step">
+                <i class=" icon"></i>
+                <div class="content">
+                    <div class="title">Lesson 4</div>
+                    <div class="description">...</div>
+                </div>
+            </div>
+            <div id="step5" class="step">
+                <i class=" icon"></i>
+                <div class="content">
+                    <div class="title">Lesson 5</div>
+                    <div class="description">...</div>
+                </div>
+            </div>
+        </div>
         <div class="ui teal progress chapter-progress-bar" id="example2">
             <div class="bar">
             </div>
@@ -15,8 +53,64 @@
     </div>
     <div class="ui vertical stripe segment">
         <div class="ui equal width stackable internally celled grid">
-            <div class="row">
-                <div class="ui middle aligned stackable grid container">
+            <div class="row" style="margin-top:100px;">
+                <div id="messages-wrapper" class="ui middle aligned stackable grid container">
+                    <div class="ui list">
+                        <div id="mess0" class="ui icon message">
+                            <img class="avatar" src="images/ajavatar.png">
+
+                            <div class="content">
+                                <div class="header">
+                                    Hi there!
+                                </div>
+                                <p>Time to start second chapter! </p>
+                            </div>
+                        </div>
+                        <div id="mess1" class="ui icon message hidden">
+                            <div class="content">
+                                <p>Minimum Viable Product means different things to different people so lets start with a definition.</p>
+                            </div>
+                        </div>
+                        <div id="mess2" class="ui icon message hidden">
+                            <div class="content">
+                                <div class="header">
+                                    What Minimum Viable Product is?
+                                </div>
+                                <p> A Minimum Viable Product is that version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort.! </p>
+                            </div>
+                        </div>
+                        <div id="mess3" class="ui icon message hidden">
+                            <i class="write icon"></i>
+                            <div class="content">
+                                <p>What Minimum Viable Product is?</p>
+                                <br>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/bvFnHzU4_W8" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+              
+
+                        <br>
+                        {{#if isFirst}}
+                        <button id="nextMessage" class="ui primary button">
+                            <i class="icon "><div class="circle-ripple"><img src="images/mentee.jpeg" style="
+                        width: 20px;
+                        position: relative;
+                        top: 0px;
+                        border-radius: 100px;
+                        height: 20px;
+                    "></div></i> Tell me more!
+                        </button>
+
+                        {{else}}
+                        <button id="nextMessage" class="ui primary button">
+                            Tell me more!
+                        </button>
+                        {{/if}}
+                        <br>
+                        <br>
+
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -30,7 +124,19 @@
                         <div class="item">
                             <i class="student icon"></i>
                             <div class="content">
-                                <a class="header" href="http://theleanstartup.com/book">The lean startup</a>
+                                <a class="header" href="http://theleanstartup.com/principles">The lean startup</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="student icon"></i>
+                            <div class="content">
+                                <a class="header" href="http://www.uxbooth.com/articles/complete-beginners-guide-to-design-research/">Complete Beginner’s Guide to UX Research</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="student icon"></i>
+                            <div class="content">
+                                <a class="header" href="https://www.nngroup.com/articles/which-ux-research-methods/">Impact mapping</a>
                             </div>
                         </div>
                         <div class="item">
@@ -39,6 +145,13 @@
                                 <a class="header" href="https://www.impactmapping.org/">Impact mapping</a>
                             </div>
                         </div>
+                        <div class="item">
+                            <i class="student icon"></i>
+                            <div class="content">
+                                <a class="header" href="http://leanstartup.co/podcasts//">Lean startup podcasts</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
