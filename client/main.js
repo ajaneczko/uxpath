@@ -122,7 +122,7 @@ Template.chapterOne.helpers({
       return lessons
       },
   'dueTime': function () {
-    var dueTime = moment("20160530", "YYYYMMDD").fromNow()
+    var dueTime = moment("20160430", "YYYYMMDD").fromNow()
     return dueTime
   }
 })
@@ -132,6 +132,8 @@ Template.chapterTwo.events({
     finishChapter('Chapter #2')
   },
 })
+
+
 
 Template.chapterTwo.helpers({
   'chapterFinished':function() {
@@ -145,15 +147,15 @@ Template.chapterTwo.helpers({
         return lessons
       },
   'dueTime': function () {
-   var dueTime = moment("20160613", "YYYYMMDD").fromNow()
+   var dueTime = moment("20160513", "YYYYMMDD").fromNow()
     return dueTime
    }
 })
 
 Template.chapterThree.events({
-  'click #finish-chapter'(event, instance) {
-    finishChapter('Chapter #3')
-  },
+    'click #go-to-chapter-three'(event,instance) {
+       Router.go('/chapter-two');
+    }
 })
 
 Template.chapterThree.helpers({
@@ -172,6 +174,7 @@ Template.chapterThree.helpers({
     return dueTime
     }
 })
+
 
 
 Template.chapterFour.helpers({
