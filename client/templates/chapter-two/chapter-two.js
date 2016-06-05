@@ -50,7 +50,7 @@ Template.chapterTwoLessons.events({
          $('#nextMessage').addClass('disabled')
      }
 
-     if (counter == 8) {
+     if (counter == 10) {
          $('#step1').removeClass('active')
          $('#step1').addClass('completed')
          $('#step2').addClass('active')
