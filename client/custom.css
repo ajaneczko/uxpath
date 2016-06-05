@@ -51,6 +51,25 @@
     padding: 5em 0em;
   }
 
+  #chapter-steps {
+  margin-top: 40px !important;
+  border-radius: 10px;
+  border:0px;
+  border-radius: 20px;
+  margin-left: 20px;
+  position: absolute;
+  height: 100%;
+  }
+
+  #chapter-steps .step {
+    border: none;
+
+  }
+
+  #chapter-steps .active.step:after {
+    border:0;
+
+  }
 
 .chapter-left-column {
  background-color: #eee;
@@ -66,8 +85,13 @@
 .chapter-header {
   position:fixed;
   width:100%;
+  padding-top: 16px;
   background-color: white;
   z-index: 10000
+}
+
+.chapter-header .menu {
+  border: none;
 }
 
 .chapter-header .steps {

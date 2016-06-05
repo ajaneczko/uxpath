@@ -1,14 +1,22 @@
 <template name="chapterTwoLessons">
     <div class="chapter-header">
         <div class="ui fixed top">
-            <h2 class="ui header">
-                <i id="backToMain" class="angle left huge icon"></i>
-                <div class="content">
-                    Research and strategy
-                </div>
-            </h2>
+          <div class="ui menu">
+            <div class="ui left item">
+              <h4 class="ui header">
+                  <i id="backToMain" class="angle left huge icon"></i>
+                  <div class="content">
+                      Research and strategy
+                  </div>
+              </h4>
+            </div>
+
+            <div class="ui right item">
+            Use  ➞  left arrow to show messages
+            </div>
+          </div>
         </div>
-        <div class="ui fluid steps" style="margin-top:0px;">
+        <div id="chapter-steps" class="ui vertical steps" style="margin-top:0px;">
             <div id="step1" class="active step">
                 <i class="icon"></i>
                 <div class="content">
@@ -52,9 +60,12 @@
             </div>
         </div>
     </div>
-    <div class="ui vertical stripe segment">
-        <div class="ui equal width stackable internally celled grid">
-            <div class="row" style="margin-top:100px;">
+    <div class="ui grid">
+        <div class="four wide column"></div>
+        <div class="twelve wide column">
+          <div class="ui vertical stripe segment">
+            <div class="ui equal width stackable internally celled grid">
+            <div class="row" >
                 <div id="messages-wrapper" class="ui middle aligned stackable grid container">
                     <div class="ui list">
                         <div id="mess0" class="ui icon message">
@@ -99,7 +110,7 @@
                                 <div class="header">
                                     Types of user research methods
                                 </div>
-                                <img src="https://s3.amazonaws.com/media.nngroup.com/media/editor/2014/10/10/user-research-methods.png">
+                                <img style="width: 800px" src="https://s3.amazonaws.com/media.nngroup.com/media/editor/2014/10/10/user-research-methods.png">
                                 <br>
                             </div>
                         </div>
@@ -107,7 +118,7 @@
 
                         <div id="mess6" class="ui icon huge message hidden">
                             <div class="content">
-                                <img src="http://thumbnails-visually.netdna-ssl.com/ux-research-method-cookies_50ffb54bd0b2f_w1500.png" style="width:800px">
+                                <img src="http://thumbnails-visually.netdna-ssl.com/ux-research-method-cookies_50ffb54bd0b2f_w1500.png" style="width:800px">
                             </div>
                         </div>
                         <div id="mess7" class="ui icon message hidden">
@@ -124,7 +135,6 @@
                               <img src="https://s-media-cache-ak0.pinimg.com/736x/61/15/77/6115773665cb72a6710f2e2c1abafc06.jpg" style="width:800px">
                             </div>
                         </div>
-
 
 
 
@@ -146,9 +156,7 @@
                                 <div class="header">
                                     What Minimum Viable Product is?
                                 </div>
-                                <p> The Minimum Viable Product (MVP) is a core concept in Lean UX. The idea is to build the most basic version of the concept as possible, test it and if there are no valuable results to abandon it. The MVPs which show promise can then be incorporated into further design and development rounds without too much hassle.
-
-                                    This is a great way of maximizing your resources and one of the reasons that it works so well with Agile development – it allows for a lot of experimentation with no “sacred cows”.! </p>
+                                <p> The Minimum Viable Product (MVP) is a core concept in Lean UX. The idea is to build the most basic version of the concept as possible, test it and if there are no valuable results to abandon it. The MVPs which show promise can then be incorporated into further design and development rounds without too much hassle.</p>
                             </div>
                         </div>
                         <div id="mess12" class="ui icon huge message hidden">
@@ -158,7 +166,7 @@
                         </div>
                         <div id="mess13" class="ui icon message hidden">
                             <div class="content">
-                                <p>Minimum Viable Product means different things to different people so lets start with a definition.</p>
+                                <p>Minimum Viable Product means different things to different people.</p>
                             </div>
                         </div>
                         <div id="mess14" class="ui icon message hidden">
@@ -166,7 +174,86 @@
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/bvFnHzU4_W8" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
+                        <div id="mess15" class="ui icon message hidden">
+                              <div class="content">
+                                <p>  Minium Viable Product is about scoping/discovering/experimenting what is the value behind product, by making things people WANT! There are a lot of ways how achive this goal. Let's consider 7 inspirational Minimum Viable Products examples.</P>
+                              </div>
+                        </div>
+                        <div id="mess16" class="ui icon message hidden">
+                              <div class="content">
+                                <div class="header">
+                                  Explainer Video
+                                </div>
+                                <br>
 
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/7QmCUDHpNzE" frameborder="0" allowfullscreen></iframe>
+                                <br>
+                                <P>To learn more about how dropbox researched MVP by video read <a href="http://techcrunch.com/2011/10/19/dropbox-minimal-viable-product/"> this article</a></p>
+                              </div>
+                        </div>
+                        <div id="mess17" class="ui icon message hidden">
+                              <div class="content">
+                                <div class="header">
+                                  Landing Page
+                                </div>
+                                <p>The job of a landing page is to quickly communicate the value of your offering, diffuse objections, and call the visitor to action.</p>
+                                <p>You can use applications like <a href="https://www.launchrock.com/"> Launchrock </a> to facilitate your research.</p>
+
+                              </div>
+                        </div>
+                        <div id="mess18" class="ui icon message hidden">
+                              <div class="content">
+                                <div class="header">
+                                  Wizard of Oz MVP
+                                </div>
+                                <p>TA “Wizard of Oz” MVP is when you put up a front that looks like a real working product, but you manually carry out product functions. It’s also known as “Flinstoning”.</p>
+                                <img src="http://scalemybusiness.com/wp-content/uploads/2013/04/zappos.jpg">
+                              </div>
+                        </div>
+                        <div id="mess19" class="ui icon message hidden">
+                              <div class="content">
+                                <div class="header">
+                                  Wizard of Oz MVP
+                                </div>
+                                <p>Instead of providing a product, you start with a manual service. But not just any service! The service should consist of exactly the same steps people would go through with your product..</p>
+                                <img src="http://scalemybusiness.com/wp-content/uploads/2013/04/foodonthetable.jpg">
+                              </div>
+                        </div>
+                        <div id="mess20" class="ui icon message hidden">
+                              <div class="content">
+                                <div class="header">
+                                  Raise Funds from Customers
+
+                                </div>
+                                <p>This is a special case of “sell it before you build it”. The basic idea is simple: launch a crowdfunding campaign on platforms such as Kickstarter, IndieGoGo and RocketHub. Not only will you validate if customers want to buy your product, but you will also raise money.</p>
+                                <img src="http://scalemybusiness.com/wp-content/uploads/2013/04/foodonthetable.jpg">
+                              </div>
+                        </div>
+                        <div id="mess21" class="ui icon message hidden">
+                              <div class="content">
+                                <div class="header">
+                                 A Single Featured MVP
+
+                                </div>
+                                <p>You can’t be everything to everybody. Starting small is obivious way to validate any hypothesis about product. For sure this apporach is bettern then assuming that people will benefit from all of the featrues we came up with under the shower last night!</p>
+                                <img src="http://66.media.tumblr.com/ae10cbd594e0e2e42a336bc976062f30/tumblr_inline_o57ufzQOQY1t9bsnt_500.gif">
+                              </div>
+                        </div>
+                        <div id="mess22" class="ui icon message hidden">
+                              <div class="content">
+
+                                <p>The 20 second summary of this lesson is: don’t burn your money on a product no one will want to use. Get creative and think hard about what is the minimum thing you can do now to make sure that doesn’t happen:</p>
+
+                                <br>
+                                <p>👍 Select one MVP strategy you think would work for you</p>
+                                <p>👍 Create a simple plan to execute on it (remember the “minimal” in MVP)</p>
+                                <p>👍 Focus on a user, what are their pains, and gains</p>
+                                <p>👍 Speak about your idea with other people</p>
+                                <p>👍 Open feedback loop as soon as it is possible</p>
+                                <p>👍 Start prototyping</p>
+                                <p>→ Use simple visual methods to describe the idea, like Impact Mapping, Canvas Value Proposition, Personas, they will help you find the uqniqe value behding the product</p>
+                              </div>
+                        </div>
 
                         <br>
                         {{#if isFirst}}
@@ -193,7 +280,6 @@
                 </div>
             </div>
         </div>
-    </div>
 
     <div class="ui vertical stripe segment">
       <div class="ui equal width stackable internally celled grid">
@@ -204,7 +290,31 @@
                 <div class="item">
                     <i class="write icon"></i>
                     <div class="content">
-                        <a class="header">#1 Idea description</a>
+                        <a class="header">#1 Problem description</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="write icon"></i>
+                    <div class="content">
+                        <a class="header">#2 Product personas</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="write icon"></i>
+                    <div class="content">
+                        <a class="header">#3 Uniqe value proposition for product</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="write icon"></i>
+                    <div class="content">
+                        <a class="header">#4 Product hypothesis</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="write icon"></i>
+                    <div class="content">
+                        <a class="header">#4 Plan for verifing Minimum Viable Product</a>
                     </div>
                 </div>
               </div>
@@ -251,6 +361,13 @@
                         <div class="item">
                             <i class="student icon"></i>
                             <div class="content">
+                                <a class="header" href="http://techcrunch.com/2011/10/19/dropbox-minimal-viable-product/">Dropbox Minimum Viable Product</a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <i class="student icon"></i>
+                            <div class="content">
                                 <a class="header" href="https://www.impactmapping.org/">Impact mapping</a>
                             </div>
                         </div>
@@ -267,4 +384,8 @@
         </div>
     </div>
   </div>
+</div>
+</div>
+
+</div>
 </template>

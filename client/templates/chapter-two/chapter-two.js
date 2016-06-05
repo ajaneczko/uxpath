@@ -1,4 +1,15 @@
 Template.chapterTwoLessons.onRendered(function () {
+  $(window).on('keydown', function(e){
+    if (e.which === 39) {
+      var counter = Session.get('counter');
+      counter += 1
+
+      Session.set('counter', counter)
+      updateProgress(counter);
+    }
+        console.log(e.which);
+    });
+
  $('#example2')
        .progress({
          total: 31
@@ -35,7 +46,9 @@ Template.chapterTwoLessons.onRendered(function () {
 
 
 Template.chapterTwoLessons.events({
+
 'click #nextMessage'(event, instance) {
+
  var counter = Session.get('counter');
      counter += 1
      // increment the counter when button is clicked
@@ -44,7 +57,6 @@ Template.chapterTwoLessons.events({
      ;
      Session.set('counter', counter)
      $('#mess'+counter).removeClass('hidden')
-     console.log(counter)
      var progres = (counter/31) * 100
      if (counter == 31) {
          $('#nextMessage').addClass('disabled')
@@ -75,6 +87,7 @@ Template.chapterTwoLessons.events({
        }
 });
 
+
 Template.chapterTwoLessons.helpers({
 'showMess': function() {
   var counter = Session.get('counter');
@@ -90,3 +103,37 @@ Template.chapterTwoLessons.helpers({
   return isFirst
 }
 });
+
+updateProgress = function (counter) {
+
+  // increment the counter when button is clicked
+
+
+  $('#mess'+counter).removeClass('hidden')
+  var progres = (counter/31) * 100
+  if (counter == 31) {
+      $('#nextMessage').addClass('disabled')
+  }
+
+  if (counter == 10) {
+      $('#step1').removeClass('active')
+      $('#step1').addClass('completed')
+      $('#step2').addClass('active')
+  }
+
+  if (counter == 14) {
+      $('#step3').addClass('active')
+      $('#step2').removeClass('active')
+      $('#step2').addClass('completed')
+  }
+
+  if (counter < 16) {
+      $('#example2').progress({
+       percent: progres
+      });
+  }
+
+
+  document.getElementById('mess'+counter).scrollIntoView(false, {behavior: "smooth"});
+
+}
