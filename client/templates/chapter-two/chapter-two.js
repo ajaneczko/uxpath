@@ -121,7 +121,7 @@ updateProgress = function (counter) {
       $('#step2').addClass('active')
   }
 
-  if (counter == 14) {
+  if (counter == 25) {
       $('#step3').addClass('active')
       $('#step2').removeClass('active')
       $('#step2').addClass('completed')
