@@ -1,0 +1,176 @@
+{
+  "title": "Acquire first 100 paying customers",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "Marketing",
+      "id": 5,
+      "attr": {
+        "position": [
+          217.4142135623731,
+          -135,
+          2
+        ],
+        "style": {
+          "background": "#ff9900"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Call 1000 companies that package their products in the region",
+          "id": 14,
+          "attr": {
+            "style": {}
+          }
+        },
+        "2": {
+          "title": "Sent 1000 emails to logistic responsible individuals from companies in a country.",
+          "id": 15,
+          "attr": {
+            "style": {}
+          }
+        },
+        "3": {
+          "title": "Setup a company booth at \"Entrepreneurs@PL 2016\" conference",
+          "id": 16,
+          "attr": {
+            "style": {}
+          }
+        },
+        "4": {
+          "title": "Set up company accounts in social media and execute a country-wide campain",
+          "id": 21
+        },
+        "0.5": {
+          "title": "Provide 24h customer service",
+          "id": 19
+        }
+      }
+    },
+    "2": {
+      "title": "CEO",
+      "id": 22,
+      "attr": {
+        "style": {
+          "background": "#ff9900"
+        },
+        "position": [
+          181.4142135623731,
+          247,
+          4
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Give 1h talk at \"Enterpreneurs@PL 2016\" conference  ",
+          "id": 23,
+          "attr": {
+            "style": {}
+          }
+        },
+        "2": {
+          "title": "Give interview to \"Innowacyjni\" newspaper and \"www.tech.pl\" portal.",
+          "id": 24
+        },
+        "3": {
+          "title": "Go to \"Targi Opakowan 2016\" in Kielce",
+          "id": 25
+        }
+      }
+    },
+    "-10": {
+      "title": "Developers",
+      "formatVersion": 2,
+      "id": 2,
+      "attr": {
+        "style": {
+          "background": "#ff9900"
+        },
+        "position": [
+          260,
+          -88,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Make package customization process shorter",
+          "id": 6,
+          "attr": {
+            "style": {}
+          }
+        },
+        "2": {
+          "title": "Allow customer to pick package colour",
+          "id": 8,
+          "attr": {
+            "style": {}
+          }
+        },
+        "3": {
+          "title": "Allow customer to pick a custom font.",
+          "id": 10,
+          "attr": {
+            "position": [
+              100.5857864376269,
+              90,
+              1
+            ],
+            "style": {}
+          }
+        }
+      }
+    },
+    "-20": {
+      "title": "Production",
+      "id": 12,
+      "attr": {
+        "position": [
+          88.5857864376269,
+          199,
+          3
+        ],
+        "style": {
+          "background": "#ff9900"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Shorten production process from 10 days to 7 days.",
+          "id": 20,
+          "attr": {
+            "position": [
+              -37.41421356237311,
+              63,
+              1
+            ],
+            "style": {}
+          }
+        }
+      }
+    }
+  },
+  "links": [
+    {
+      "ideaIdFrom": 10,
+      "ideaIdTo": 12,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 8,
+      "ideaIdTo": 12,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    }
+  ]
+}
