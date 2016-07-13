@@ -12,7 +12,7 @@ Template.chapterTwoLessons.onRendered(function () {
 
  $('#example2')
        .progress({
-         total: 31
+         total: 50
        })
      ;
 
@@ -30,7 +30,7 @@ Template.chapterTwoLessons.onRendered(function () {
 
          } else {
 
-              var progres = (counter/31) * 100
+              var progres = (counter/50) * 100
              console.log(progres)
              $('#example2').progress({
               percent: progres
@@ -57,8 +57,8 @@ Template.chapterTwoLessons.events({
      ;
      Session.set('counter', counter)
      $('#mess'+counter).removeClass('hidden')
-     var progres = (counter/31) * 100
-     if (counter == 31) {
+     var progres = (counter/50) * 100
+     if (counter == 50) {
          $('#nextMessage').addClass('disabled')
      }
 
@@ -110,8 +110,8 @@ updateProgress = function (counter) {
 
 
   $('#mess'+counter).removeClass('hidden')
-  var progres = (counter/31) * 100
-  if (counter == 31) {
+  var progres = (counter/50) * 100
+  if (counter == 50) {
       $('#nextMessage').addClass('disabled')
   }
 
@@ -127,7 +127,13 @@ updateProgress = function (counter) {
       $('#step2').addClass('completed')
   }
 
-  if (counter < 16) {
+  if (counter == 33) {
+      $('#step4').addClass('active')
+      $('#step3').removeClass('active')
+      $('#step3').addClass('completed')
+  }
+
+  if (counter < 50) {
       $('#example2').progress({
        percent: progres
       });
